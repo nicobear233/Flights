@@ -541,10 +541,10 @@
                 var last_time = Math.ceil((new Date(data[3]).getTime() - new Date().getTime())/ 60000);
                 var value = this.geoCoordMap[data[0]].concat(last_time);
                 console.log(typeof(data[3]))
-                console.log(data[3].length()-2)
+                console.log(data[3].length-2)
                 res.push({
                     name: data[0],
-                    value: data[3].toString().substring(5,data[3].length()-2)
+                    value: data[3].toString().substring(5,data[3].length-2)
                 });
                 return res;
             },
