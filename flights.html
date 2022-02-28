@@ -441,7 +441,7 @@
                                     // width: 0,
                                     width: 1,
                                     opacity: 0.6,
-                                    curveness: 0.2, //边的曲度，支持从 0 到 1 的值，值越大曲度越大
+                                    curveness: item[4], //边的曲度，支持从 0 到 1 的值，值越大曲度越大
                                 }
                             },
                             label: {
@@ -449,6 +449,10 @@
                                 position: 'middle',
                                 fontSize: 14,
                                 formatter: ""+this.convertTime(item)[0].value[2]
+                            },
+                        emphasis: {
+                                focus: 'series',
+                                blurScope: 'coordinateSystem'
                             },
                             data: this.convertData(item) //线数据集。
                         },
