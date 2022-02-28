@@ -550,7 +550,7 @@
                 console.log(data[3].length-2)
                 res.push({
                     name: data[0],
-                    value: data[3].toString().substring(5,data[3].length-2)
+                    value: value.concat(data[3].toString().substring(5,data[3].length-2))
                 });
                 return res;
             },
