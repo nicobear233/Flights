@@ -448,7 +448,7 @@
                                 show: true,
                                 position: 'middle',
                                 fontSize: 14,
-                                formatter: this.convertTime(item)[2]
+                                formatter: this.convertTime(item).value[2]
                             },
                         emphasis: {
                                 focus: 'series',
@@ -473,11 +473,6 @@
                                 width: 0,
                                 opacity: 0.6,
                                 curveness: item[5]
-                            },
-                            label: {
-                                show: true,
-                                position: 'middle',
-                                formatter: this.convertTime(item)[2]
                             },
                             data: this.convertData(item)
                         },  
