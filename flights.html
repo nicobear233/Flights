@@ -448,7 +448,7 @@
                                 show: true,
                                 position: 'middle',
                                 fontSize: 14,
-                                formatter: this.convertTime(item).value[2]
+                                formatter: item[4]+" / "+this.convertTime(item)[0].value[2]
                             },
                         emphasis: {
                                 focus: 'series',
@@ -550,7 +550,6 @@
                     name: data[0],
                     value: value.concat(data[3].toString().substring(5,data[3].length-3))
                 });
-                console.log(res[0].value[1])
                 return res;
             },
             createLine(seriesData, regionsData){
