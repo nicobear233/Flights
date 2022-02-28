@@ -448,10 +448,10 @@
                                 show: true,
                                 position: 'middle',
                                 fontSize: 14,
+                                formatter: this.convertTime(item)[2]
                             },
                         emphasis: {
                                 focus: 'series',
-                                
                             },
                             data: this.convertData(item) //线数据集。
                         },
