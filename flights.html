@@ -543,7 +543,8 @@
                 console.log(data[3])
                 res.push({
                     name: data[0],
-                    value: value.concat(data[3].toString().substring(7,9)+"日"+data[3].toString().substring(9,15))
+                    value: data[3].toString().substring(5,len(data[3]-2))
+                    //value: value.concat(data[3].toString().substring(7,9)+"日"+data[3].toString().substring(9,15))
                 });
                 return res;
             },
