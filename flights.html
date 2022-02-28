@@ -441,7 +441,7 @@
                                     // width: 0,
                                     width: 1,
                                     opacity: 0.6,
-                                    curveness: item[4], //边的曲度，支持从 0 到 1 的值，值越大曲度越大
+                                    curveness: item[5], //边的曲度，支持从 0 到 1 的值，值越大曲度越大
                                 }
                             },
                             label: {
@@ -473,12 +473,12 @@
                                 color: '#46bee9',
                                 width: 0,
                                 opacity: 0.6,
-                                curveness: item[4]
+                                curveness: item[5]
                             },
                             label: {
                                 show: true,
                                 position: 'middle',
-                                formatter: this.convertTime(item)[2]
+                                formatter: item[4]+this.convertTime(item)[2]
                             },
                             data: this.convertData(item)
                         },  
